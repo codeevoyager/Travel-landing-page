@@ -126,7 +126,6 @@ img{
 }
 
 .header-part img{
-    
     animation: zoomout 0.5s;
 }
 
@@ -330,7 +329,6 @@ img{
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 3rem;
-
 }
 
 .gallery-img{

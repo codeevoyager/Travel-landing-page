@@ -11,7 +11,7 @@ function menu(){
     })
 }
 
-let section = document.querySelectorAll('section');
+        let section = document.querySelectorAll('section');
         let lists = document.querySelectorAll('LI');
 
         function activeLink(li) {
@@ -19,15 +19,10 @@ let section = document.querySelectorAll('section');
             li.classList.add('active');
         }
 
-        lists.forEach((item) =>
-            item.addEventListener('click', function(){
-                activeLink(this);
-            }));
-
         window.onscroll = () => {
             section.forEach(sec => {
                 let top = window.scrollY,
-                    offset = sec.offsetTop,
+                    offset = sec.offsetTop - 50,
                     height = sec.offsetHeight,
                     id = sec.getAttribute('id');
 
@@ -37,3 +32,8 @@ let section = document.querySelectorAll('section');
                 }
             })
         };
+
+        lists.forEach((item) =>
+            item.addEventListener('click', function(){
+                activeLink(this);
+            }));
