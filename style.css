@@ -437,7 +437,7 @@ footer{
 @media screen and (max-width: 900px) {
 
     .section-part{
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
    }
 
     .section-title{
@@ -509,7 +509,7 @@ footer{
 @media screen and (max-width: 700px){
 
     .section-part{
-        padding: 3rem 1.5rem;
+        padding: 6rem 1.5rem;
     }    
 
       .header-content h2{
