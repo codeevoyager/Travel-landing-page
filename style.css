@@ -109,6 +109,17 @@ nav{
     max-width: 1200px;
 }
 
+.section-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.section-subtitle{
+    margin: 1rem 0;
+    max-width: calc(var(--max-width) / 2);
+}
+
 img{
     width: 100%;
     display: block;
@@ -145,11 +156,11 @@ img{
 }
 
 .header-content{
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 .header-content h2{
-    font-size: 2.5rem;   
+    font-size: 2.2rem;   
 }
 
 .header-content p{
@@ -157,16 +168,6 @@ img{
     padding: 1rem 0;
 }
 
-.section-title{
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 1rem 0;
-}
-
-.section-subtitle{
-    margin: 1rem 0;
-    max-width: calc(var(--max-width) / 2);
-}
 
 /************ destination part *************/
 
@@ -399,12 +400,12 @@ footer{
     margin: 3rem;
 }
 
-.footer-col-1 h3{
+.footer-col-1 h2{
     font-weight: 700;
     margin-block: 2rem;
 }
 
-.footer-col h4{
+.footer-col h3{
     font-weight: 600;
     margin-block: 2rem;
 }
@@ -435,6 +436,20 @@ footer{
 
 @media screen and (max-width: 900px) {
 
+    .section-part{
+        padding: 4rem 2rem;
+   }
+
+    .section-title{
+        font-size: 1.4rem;
+    }
+
+    .header-part img{
+        width: 90%;
+        display: block;
+        margin-inline: auto;
+    }
+
    .links, .contact-btn{
         display: none;
    }
@@ -464,10 +479,6 @@ footer{
         text-align: center;
    }
 
-   .section-part{
-        padding: 4rem 1rem;
-   }
-
    .header-part{
         grid-template-columns: repeat(1, 1fr);
    }
@@ -476,9 +487,39 @@ footer{
         gap: 1rem;
     }
 
+    .trip-grid{
+        grid-template-columns: repeat(2, 1fr );
+    }
+
+    footer{
+        padding-inline: 1rem;
+    }
+
+    .footer-part{
+        gap: 1.2rem;
+        margin: 1.5rem;
+    }
+
+    .footer-col-1, .footer-col{
+        margin-block: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 700px){
+
+    .section-part{
+        padding: 3rem 1.5rem;
+    }    
+
+      .header-content h2{
+        font-size: 1.8rem;
+      }  
+
+      .header-content p{
+        font-size: 1rem;
+      }
+
       .destination-grid {
         grid-template-columns: repeat(2, 1fr);
       }
